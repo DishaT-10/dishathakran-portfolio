@@ -1,0 +1,52 @@
+body {
+  padding-top: 70px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .container {
+  z-index: 1;
+}
+
+
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-in-out;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
